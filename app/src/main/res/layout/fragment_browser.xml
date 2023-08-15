@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/browser_url_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/url_background_color"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/browser_url_menu"
+            android:fontFamily="@font/materialdesignicons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#ff04786d"
+            android:textColor="@android:color/white"
+            android:text="@string/key_menu" />
+
+        <Button
+            android:id="@+id/browser_url_keyboard_toggle"
+            android:fontFamily="@font/materialdesignicons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#ff04786d"
+            android:textColor="@android:color/white"
+            android:text="@string/key_keyboard" />
+
+        <EditText
+            android:id="@+id/browser_url_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:textColor="@color/url_text_color"
+            android:ems="10"
+            android:text="" />
+
+        <Button
+            android:id="@+id/browser_url_backspace"
+            android:fontFamily="@font/materialdesignicons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#ff04786d"
+            android:textColor="@android:color/white"
+            android:text="@string/key_backspace" />
+
+        <Button
+            android:id="@+id/browser_url_ok"
+            android:fontFamily="@font/materialdesignicons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#ff04786d"
+            android:textColor="@android:color/white"
+            android:text="@string/key_enter" />
+
+        <Button
+            android:id="@+id/browser_url_submit"
+            android:fontFamily="@font/materialdesignicons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#ff04786d"
+            android:textColor="@android:color/white"
+            android:text="@string/key_submit" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/webview_component"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="visible">
+    </WebView>
+
+    <LinearLayout
+        android:id="@+id/browser_keyboard"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+</LinearLayout>
